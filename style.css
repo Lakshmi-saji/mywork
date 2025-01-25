@@ -42,64 +42,45 @@ ul{
     justify-content: center;
     align-items: center;
 }
-/* Basic styling */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f4f4f9;
 }
 
-/* Search container */
 .search-container {
     display: flex;
-    width: 60%;
-    max-width: 600px;
-    background: #fff;
+    align-items: center;
+    border: 1px solid #ccc;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px;
+    background-color: #fff;
 }
 
-/* Input field styling */
-#search-box {
-    flex: 1;
+#search-input {
     border: none;
-    padding: 15px;
-    border-radius: 25px 0 0 25px;
-    outline: none;
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
     font-size: 16px;
 }
 
-/* Button styling */
-#send-btn {
-    background: #ff7200;
+#search-button {
     border: none;
-    padding: 15px 30px;
+    padding: 10px 15px;
+    background-color: #007bff;
     color: white;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s ease;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-#send-btn:hover {
-    background: #ff5722;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .search-container {
-        width: 90%;
-    }
-    #search-box {
-        font-size: 14px;
-    }
-    #send-btn {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
+#search-button:hover {
+    background-color: #0056b3;
 }
