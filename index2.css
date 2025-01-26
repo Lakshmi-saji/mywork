@@ -1,68 +1,62 @@
-/* Reset margins, padding, and box-sizing */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles with sky and airplane theme */
+/* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('sky-background.jpg'); /* Sky and clouds background */
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Gradient background */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
     text-align: center;
-    background-attachment: fixed; /* Keeps the background fixed during scroll */
 }
 
-/* Header Section */
+/* Header Styles */
 .header {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
     width: 80%;
-    max-width: 650px;
+    max-width: 600px;
 }
 
 #logo-img {
     width: 120px;
     margin-bottom: 20px;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: bold;
-    letter-spacing: 4px;
     text-transform: uppercase;
+    letter-spacing: 2px;
     margin-bottom: 15px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 40px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Main Content Section */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.content-container {
+    text-align: center;
     width: 100%;
-    max-width: 650px;
+    max-width: 600px;
 }
 
 /* Button Styles */
@@ -80,7 +74,7 @@ button {
     border: none;
     border-radius: 50px;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .login-btn {
@@ -103,12 +97,6 @@ button {
     background-color: #218838;
     transform: scale(1.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Adding Airplane Icon */
-.login-btn::before, .signup-btn::before {
-    content: url('airplane-icon.svg'); /* Replace with your airplane icon */
-    margin-right: 10px;
 }
 
 /* Responsive Design */

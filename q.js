@@ -70,7 +70,7 @@ function submitSurvey() {
 
     // Redirect to the results page with answers as a URL query string
     const queryString = `?answers=${encodeURIComponent(JSON.stringify(answers))}`;
-    window.location.href = 'results.html' + queryString;
+    window.location.href = 'results1.html' + queryString;
 }
 
 // Initialize by showing the first question
