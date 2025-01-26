@@ -1,0 +1,103 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('city-background.jpg'); /* City background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    margin-bottom: 40px;
+}
+
+#logo-img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 14px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #0056b3;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.signup-btn {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #218838;
+}
+
+.signup-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Optional: Add responsive design for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
+}
