@@ -1,0 +1,29 @@
+// Open the Login Modal
+function openLogin() {
+    document.getElementById("loginModal").style.display = "block";
+}
+
+// Close the Login Modal
+function closeLogin() {
+    document.getElementById("loginModal").style.display = "none";
+}
+
+// Open the Signup Modal
+function openSignup() {
+    document.getElementById("signupModal").style.display = "block";
+}
+
+// Close the Signup Modal
+function closeSignup() {
+    document.getElementById("signupModal").style.display = "none";
+}
+
+// Close modal when clicked outside of the modal content
+window.onclick = function(event) {
+    if (event.target === document.getElementById("loginModal")) {
+        closeLogin();
+    }
+    if (event.target === document.getElementById("signupModal")) {
+        closeSignup();
+    }
+};

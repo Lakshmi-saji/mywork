@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Travel Planner Group</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h1 class="login-header">Travel Planner Group</h1>
+    <h2 class="login-subheader">Welcome Back! Please Login</h2>
+
+    <form class="login-form" onsubmit="return validateLogin()">
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="login-btn">Login</button>
+            <button type="button" class="back-btn" onclick="goBack()">Back</button>
+        </div>
+    </form>
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Taste Survey</title>
+    <link rel="stylesheet" href="q.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Discover Your Travel Taste</h1>
+        <p id="question-counter">Question 1 of 10</p>
+        <div class="question-box">
+            <p id="question-text">What type of destinations do you prefer?</p>
+            <textarea id="answer" placeholder="Type your answer here..."></textarea>
+        </div>
+        <div class="button-container">
+            <button id="backBtn" onclick="prevQuestion()" disabled>Back</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            <button id="submitBtn" onclick="submitSurvey()" style="display: none;">Submit</button>
+        </div>
+    </div>
+
+    <script src="q.js"></script>
+
+</body>
+</html>

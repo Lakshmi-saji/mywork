@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Travel Planner Group</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<div class="signup-container">
+    <h1 class="signup-header">Travel Planner Group</h1>
+    <h2 class="signup-subheader">Create Your Account</h2>
+
+    <form class="signup-form" id="signupForm" onsubmit="return validateSignup(event)">
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose your username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Create Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <button type="button" class="back-btn" onclick="goBack()">Back</button>
+        </div>
+    </form>
+</div>
+
+<script>
+// Validation function for signup form
+function validateSignup(event) {
+    event.preventDefault();  // Prevent form submission to handle custom logic
+
+    // Get form inputs
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Add your validation logic here
+    if (username && password) {
+        // Redirect to the welcome page after successful signup
+        window.location.href = 'welcome.html'; // Change the URL to your actual welcome page
+    } else {
+        alert('Please fill out all fields!');
+    }
+}
+
+// Back button function (optional, if you want to return to the previous page)
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</body>
+</html>
